@@ -1,0 +1,30 @@
+{
+    "name": "solrakmnk/first-package",
+    "description": "Mi Primer Paquete :)",
+    "authors": [
+        {
+            "name": "Carlos A. Guevara",
+            "email": "solrak.m@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload":{
+        "psr-4": {
+            "Solrakmnk\\FirstPackage\\":"src/"
+        },
+        "files":["src/helpers.php"]
+    },
+    "require-dev": {
+        "orchestra/testbench": "^5.3"
+    },
+    "extra":{
+        "laravel":{
+            "providers":[
+                "Solrakmnk\\FirstPackage\\ServiceProviders\\FirstPackageServiceProvider"
+            ],
+            "aliases":{
+                "FirstPackage":"Solrakmnk\\FirstPackage\\Facades\\FirstPackage"
+            }
+        }
+    }
+}
