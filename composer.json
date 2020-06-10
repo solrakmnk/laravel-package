@@ -14,6 +14,11 @@
         },
         "files":["src/helpers.php"]
     },
+    "autoload-dev": {
+        "psr-4": {
+            "Solrakmnk\\FirstPackage\\Tests\\": "tests/"
+        }
+    },
     "require-dev": {
         "orchestra/testbench": "^5.3"
     },
