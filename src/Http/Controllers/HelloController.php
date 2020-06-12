@@ -8,7 +8,7 @@ class HelloController
 {
     function __invoke()
     {
-        return FirstPackage::hello();
+        return view('first-package::home', ['message' => FirstPackage::hello()]);
     }
 }
 
