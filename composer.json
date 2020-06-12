@@ -25,7 +25,8 @@
     "extra":{
         "laravel":{
             "providers":[
-                "Solrakmnk\\FirstPackage\\ServiceProviders\\FirstPackageServiceProvider"
+                "Solrakmnk\\FirstPackage\\Providers\\FirstPackageServiceProvider",
+                "Solrakmnk\\FirstPackage\\Providers\\RouteServiceProvider"
             ],
             "aliases":{
                 "FirstPackage":"Solrakmnk\\FirstPackage\\Facades\\FirstPackage"
